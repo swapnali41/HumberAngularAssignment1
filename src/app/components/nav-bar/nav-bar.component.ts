@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,EventEmitter, OnInit, Output } from '@angular/core';
+
 
 @Component({
   selector: 'nav-bar',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent implements OnInit {
-
+@Output() close: EventEmitter<any> = new EventEmitter();
   constructor() { }
 
   ngOnInit(): void {

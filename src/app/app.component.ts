@@ -16,4 +16,7 @@ export class AppComponent {
   closeModal() {
     this.showModal = false;
   }
+  enterText(event:KeyboardEvent){
+    console.log(event.key);
+  }
 }
